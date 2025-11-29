@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bryson To Do List</title>
+    <link rel="stylesheet" href="todo.css">
+    <script src="todo.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.4.4/build/global/luxon.min.js"></script>
+</head>
+<body>
+    <!-- HEADER SECTION -->
+    <header>
+        <h1>WELCOME TO THE TASK LIST.</h1>
+        <h2>Please Add, Delete, or Mark Finished!</h2>
+        <p id="current_time"></p>
+    </header>
+    <!-- MAIN SECTION -->
+    <main>
+        <form id="task_form">
+            <input type="text" id="task_input" placeholder="Enter New Task Here" >
+            <select id="task_category">
+                <option value="Home">Home</option>
+                <option value="Work">Work</option>
+                <option value="School">School</option>
+                <option value="Church">Church</option>
+                <option value="Other">Other</option>
+            </select>
+            <button type="submit">ADD TASK</button>
+        </form>
+        <div class="category_section">
+        <h3 class="category_filter_header">Current Tasklist Categories</h3>
+            <select id="category_filter">
+                <option value="all">All</option>
+                <option value="Home">Home</option>
+                <option value="Work">Work</option>
+                <option value="School">School</option>
+                <option value="Church">Church</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <div class="task_list">
+            <h3 class="final_tasks">Your Tasks</h3>
+            <ul class="tasks"></ul>
+        </div>
+    </main>
+    <!-- FOOTER SECTION -->
+    <footer>    
+        <p>Bryson Webb • To-Do List • &copy; 2024</p>
+    </footer>
+</body>
+</html>
