@@ -4,9 +4,11 @@ I created this project to improve my JavaScript skills and learn how to make a w
 
 The app lets users add tasks, assign categories, filter them, and delete them. I also used the Luxon library to display the current date and time, and I wrote a recursive function to automatically count and number each task when it’s added.
 
-This project helped me practice ES6 features, work with an external library, and build a simple but functional interactive tool.s
+This project helped me practice ES6 features, work with an external library, and build a simple but functional interactive tools.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[To-Do-List Website](https://brysonwebb98.github.io/To-Do-List/)
+
+[Software Demo Video](https://youtu.be/oDADEIS2nwI)
 
 # Development Environment
 

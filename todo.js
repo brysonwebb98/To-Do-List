@@ -1,14 +1,19 @@
-// IMPORTING DEPENDENCIES
+// DATE AND TIME FROM LUXON
 const currentDate = luxon.DateTime.now().toLocaleString(luxon.DateTime.DATETIME_MED);
+
 // TESTING
 console.log("CURRENT TIME WITH LUXON:", currentDate);
 
+// USING DOM TO GRAB THE FORM
 const form = document.getElementById('task_form');
 
+// USING DOM TO GRAG THE P ELEMENT FOR THE DATE AND TIME
 document.getElementById("current_time").textContent = currentDate;
 
 // ADDING TASKS FUNCTION
 function addTask(event){
+
+    // HELPING SO THE BROWSER DOESN'T NAVIGATE AWAY 
     event.preventDefault();
 
     // GRABBING THE VALUES FROM THE ELEMENTS
